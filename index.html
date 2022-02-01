@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
-    <title>Digital Clock</title>
-</head>
-<body>
-    <main>
-        <div class="container">
-            <div class="time">
-                <div id="hours">0:</div>
-                <div class="descr">Horas</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/script.js" defer></script>
+        <title>Digital Clock</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="cards">
+                    <div class="card">
+                        <div id="hours" class="time">0</div>
+                    </div>
+                    <div class="divisor">:</div>
+
+                    <div class="card">
+                        <div id="minutes" class="time">0</div>
+                    </div>
+                    <div class="divisor">:</div>
+
+                    <div class="card">
+                        <div id="seconds" class="time">0</div>
+                    </div>
+                </div>
+
+                <div class="weekdays">
+                    <span class="day" id="day-0">Mon</span>
+                    <span class="day" id="day-1">Tue</span>
+                    <span class="day" id="day-2">Wed</span>
+                    <span class="day" id="day-3">Thu</span>
+                    <span class="day" id="day-4">Fri</span>
+                    <span class="day" id="day-5">Sat</span>
+                    <span class="day" id="day-6">Sun</span>
+                </div>
             </div>
-            <div class="time">
-                <div id="minutes">0</div>
-                <div class="descr">Minutos</div>
-            </div>
-            <div class="time">
-                <div id="seconds">0</div>
-                <div class="descr">Segundos</div>
-            </div>
-            <div class="time">
-                <div id="miliSeconds">0</div>
-                <div class="descr">Milisegundos</div>
-            </div>
-        </div>
-        <button onclick="startCrono()">Start</button>
-    </main>
-</body>
+        </main>
+    </body>
 </html>
